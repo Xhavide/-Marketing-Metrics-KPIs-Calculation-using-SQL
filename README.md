@@ -12,7 +12,7 @@ Tracking KPIs and performance metrics using SQL is of greater importance for any
 ## 🚀Project Features
 
 
-- 📊Predefined SQL queries for Campaign goal KPIs and Campaign supported metrics  calculations**(Conversions, Customer acquisition cost (CAC), Average order value (AOV), ROI,   etc.)** 
+- 📊Predefined SQL queries for Campaign goal KPIs and Campaign supported metrics  calculations(**Conversions, Customer acquisition cost (CAC), Average order value (AOV), ROI,   etc.)** 
 - ⌛Marketing funnel and spending calculations(impressions, CPM, Conversions, Customer acquisition cost (CAC), Average order value (AOV), ROMI, etc.)
 - 🔎Optimized queries for the analysis of campaign performance across different marketing channels ( email, social media platforms, YouTube, websites, Google Ads, etc.)
 - 👥Customer Behavior Analysis ( What is the MQL_to_SQL_conversion_rate on weekdays and weekends?
