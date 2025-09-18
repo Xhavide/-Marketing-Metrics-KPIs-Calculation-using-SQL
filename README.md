@@ -13,12 +13,12 @@ Tracking KPIs and performance metrics using SQL is of greater importance for any
 
 
 - 📊Predefined SQL queries for Campaign goal KPIs and Campaign supported metrics  calculations(**Conversions, Customer acquisition cost (CAC), Average order value (AOV), ROI,   etc.)** 
-- ⌛Marketing funnel and spending calculations(impressions, CPM, Conversions, Customer acquisition cost (CAC), Average order value (AOV), ROMI, etc.)
-- 🔎Optimized queries for the analysis of campaign performance across different marketing channels ( email, social media platforms, YouTube, websites, Google Ads, etc.)
-- 👥Customer Behavior Analysis ( What is the MQL_to_SQL_conversion_rate on weekdays and weekends?
-- 📈Trend analysis support ( What is the ratio of gross profit and average revenue between weekdays and weekends?
-- 💰Customer Segment Profitability (CSP) calculations (Helps to evaluate profitability of different customer groups and tailor strategies to improve it.) 
-- ⚖️Multi-Touch Attribution (MTA) calculations (Helps resource allocation across different marketing channels.)
+- ⌛Marketing funnel and spending calculations(**impressions, CPM, Conversions, Customer acquisition cost (CAC), Average order value (AOV), ROMI, etc.)**
+- 🔎Optimized queries for the analysis of campaign performance across different marketing channels ( **email, social media platforms, YouTube, websites, Google Ads, etc.)**
+- 👥Customer Behavior Analysis (**What is the MQL_to_SQL_conversion_rate on weekdays and weekends?**
+- 📈Trend analysis support (**What is the ratio of gross profit and average revenue between weekdays and weekends?**
+- 💰Customer Segment Profitability (CSP) calculations (**Helps to evaluate profitability of different customer groups and tailor strategies to improve it.)** 
+- ⚖️Multi-Touch Attribution (MTA) calculations (**Helps resource allocation across different marketing channels.)**
 
 ---
 
@@ -29,9 +29,9 @@ Tracking KPIs and performance metrics using SQL is of greater importance for any
 
 
 
-- The social media "facebook_retargeting" campaign exhibits the highest MQL-to-SQL conversion rate at 21.34%, followed by the influencer "YouTube_blogger" campaign at 19.27%.
+- The social media __"facebook_retargeting"__ campaign exhibits the highest **MQL-to-SQL conversion rate at 21.34%,** followed by the influencer __"YouTube_blogger" campaign at 19.27%.__
 
-- Conversely, the social media "instagram_tier2" campaign demonstrates the lowest MQL-to-SQL conversion rate at 3.01%, with the "facebook_tier2" campaign close behind at 8.16%.
+- Conversely, the social media **"instagram_tier2"** campaign demonstrates the lowest **MQL-to-SQL conversion rate at 3.01%,** with the **"facebook_tier2"** campaign close behind at 8.16%.
 
 - In terms of ROI, "influencer" campaigns are the top performers with an ROI of 1.54294 and a Segment Profitability Margin (SPM) of 60%, followed by media campaigns with an ROI of 0.224062 and an SPM of 18.3%.
 
