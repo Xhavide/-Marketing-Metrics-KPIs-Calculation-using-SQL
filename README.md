@@ -23,5 +23,16 @@ Tracking KPIs and performance metrics using SQL is of greater importance for any
 
 
 
+## 💡📝Project Insights & Conclusions
+
+### 💡Key Insights 
+
+
+
+
+
+
+
+
 
 
