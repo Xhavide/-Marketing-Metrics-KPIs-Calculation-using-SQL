@@ -33,19 +33,19 @@ Tracking KPIs and performance metrics using SQL is of greater importance for any
 
 - Conversely, the social media **"instagram_tier2"** campaign demonstrates the lowest **MQL-to-SQL conversion rate at 3.01%,** with the **"facebook_tier2"** campaign close behind at 8.16%.
 
-- In terms of ROI, "influencer" campaigns are the top performers with an ROI of 1.54294 and a Segment Profitability Margin (SPM) of 60%, followed by media campaigns with an ROI of 0.224062 and an SPM of 18.3%.
+- In terms of ROI, __"influencer"__ campaigns are the top performers with an **ROI of 1.54294 and a Segment Profitability Margin (SPM) of 60%,** followed by **media** campaigns with an **ROI of 0.224062 and an SPM of 18.3%.**
 
-- Regarding total marketing expenditure and ROMI, the "facebook_lal" campaign shows the weakest performance, characterized by the highest CAC of 8986.187891, a negative gross profit of -2341706.24, and a negative ROMI of -88.6359. This is followed by the "facebook_tier2" campaign, with a CAC of 6822.486875, a negative gross profit of -1230564.97, and a negative ROMI of -26.2164.
+- Regarding total marketing expenditure and **ROMI**, the **"facebook_lal"** campaign shows the weakest performance, characterized by the highest **CAC of 8986.187891,** a negative **gross profit of -2341706.24,** and a negative **ROMI of -88.6359.** This is followed by the **"facebook_tier2"** campaign, with a **CAC of 6822.486875,** a negative **gross profit of -1230564.97,** and a negative **ROMI of -26.2164.**
 
-- The "youtube_blogger" campaign demonstrates the strongest performance, evidenced by the lowest CAC of 2120.134018, the highest gross profit of 11253496.49, and the highest ROMI of 277.3207. The "facebook_retargeting" campaign follows, with a CAC of 2467.279815, a gross profit of 270452.78, and a ROMI of 101.4961.
+- The **"youtube_blogger"** campaign demonstrates the strongest performance, evidenced by the lowest **CAC of 2120.134018,** the highest **gross profit of 11253496.49,** and the highest **ROMI of 277.3207.** The **"facebook_retargeting"** campaign follows, with a **CAC of 2467.279815, a gross profit of 270452.78, and a ROMI of 101.4961.**
 
-- Customer activity appears to be higher on weekdays compared to weekends, resulting in greater average revenue generated during weekdays.
+- Customer activity appears to be **higher on weekdays compared to weekends,** resulting in greater average revenue generated during weekdays.
 
  ## 📝Conclusion
 
 
 
-Even though it is only a one-month tracking of the marketing KPIs, this dataset serves as a sufficient resource for marketers and data analysts to uncover valuable insights regarding campaign performance, audience preferences, channel effectiveness, and ROI, demonstrating SQL's application in metric calculation and analysis. Businesses rely on a variety of KPIs to measure their success. Knowing how to track these KPIs using SQL gives them a competitive edge in overcoming challenges and driving targeted growth.
+Even though it is only a one-month tracking of the marketing KPIs, this dataset serves as a sufficient resource for marketers and data analysts to uncover valuable insights regarding campaign performance, audience preferences, channel effectiveness, and ROI, demonstrating SQL's application in metric calculation and analysis. Businesses rely on a variety of KPIs to measure their success. **Knowing how to track these KPIs using SQL gives them a competitive edge in overcoming challenges and driving targeted growth.**
 
 
 
