@@ -40,7 +40,7 @@ Tracking KPIs and performance metrics using SQL is of greater importance for any
 - The **"youtube_blogger"** campaign demonstrates the strongest performance, evidenced by the lowest **CAC of 2120.134018,** the highest **gross profit of 11253496.49,** and the highest **ROMI of 277.3207.** The **"facebook_retargeting"** campaign follows, with a **CAC of 2467.279815, a gross profit of 270452.78, and a ROMI of 101.4961.**
 
 - Customer activity appears to be **higher on weekdays compared to weekends,** resulting in greater average revenue generated during weekdays.
-
+---------
  ## 📝Conclusion
 
 
