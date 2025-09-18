@@ -41,7 +41,7 @@ Tracking KPIs and performance metrics using SQL is of greater importance for any
 
 - Customer activity appears to be higher on weekdays compared to weekends, resulting in greater average revenue generated during weekdays.
 
-  ### 📝Conclusion
+ ### 📝Conclusion
 
 
 
