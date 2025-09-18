@@ -54,8 +54,8 @@ SET c_dateconverted = CONVERT(date, c_date)
 
 
 SELECT campaign_name,
-    MIN(c_dateconverted) AS CampaignStartDate,
-    MAX(c_dateconverted) AS CampaignAndDate
+       MIN(c_dateconverted) AS CampaignStartDate,
+       MAX(c_dateconverted) AS CampaignAndDate
 FROM dbo.MarketingAnalysis2
 GROUP BY campaign_name;
 
@@ -86,12 +86,12 @@ ORDER BY MQL_to_SQL_conversion_rate DESC;
 
 SELECT campaign_name,
        SUM(mark_spent) AS Total_Mark_Spent,
-	  ROUND(SUM(mark_spent) * 1.0 / SUM(impressions),6) * 1000 AS CPM,
+	   ROUND(SUM(mark_spent) * 1.0 / SUM(impressions),6) * 1000 AS CPM,
 	   ROUND(SUM(mark_spent) * 1.0 / SUM( clicks),6) AS CPC,
 	   ROUND(SUM(mark_spent) * 1.0 / SUM( leads),6) AS CPL,
 	   ROUND(SUM(mark_spent) * 1.0 / SUM(orders),6) AS CAC,
 	   SUM(revenue) - SUM(mark_spent) AS Gross_Profit,
-	  ROUND((SUM(revenue) * 1.0 - SUM(mark_spent)) /SUM(mark_spent),6) *100 AS ROMI
+	   ROUND((SUM(revenue) * 1.0 - SUM(mark_spent)) /SUM(mark_spent),6) *100 AS ROMI
 FROM dbo.MarketingAnalysis2
 GROUP BY campaign_name
 ORDER BY CAC DESC;
@@ -212,14 +212,12 @@ ORDER  BY max_gross_profit DESC;
 
 
 
-
 SELECT campaign_name, category,
        MAX( revenue - mark_spent )AS max_gross_profit
 FROM   dbo.MarketingAnalysis2
 WHERE DATENAME(weekday, c_dateconverted) IN ('Saterday', 'Sunday')
 GROUP BY campaign_name, category
 ORDER  BY max_gross_profit DESC; 
-
 
 
 --Delete unused column
@@ -230,3 +228,4 @@ DROP COLUMN c_date
 
 SELECT*
 FROM dbo.MarketingAnalysis2
+
