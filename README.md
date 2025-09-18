@@ -41,7 +41,9 @@ Tracking KPIs and performance metrics using SQL is of greater importance for any
 
 - Customer activity appears to be higher on weekdays compared to weekends, resulting in greater average revenue generated during weekdays.
 
-  ### 📝Conclusions
+  ### 📝Conclusion
+
+
 
 Even though it is only a one-month tracking of the marketing KPIs, this dataset serves as a sufficient resource for marketers and data analysts to uncover valuable insights regarding campaign performance, audience preferences, channel effectiveness, and ROI, demonstrating SQL's application in metric calculation and analysis. Businesses rely on a variety of KPIs to measure their success. Knowing how to track these KPIs using SQL gives them a competitive edge in overcoming challenges and driving targeted growth.
 
