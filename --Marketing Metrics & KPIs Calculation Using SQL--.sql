@@ -21,21 +21,20 @@ SELECT DISTINCT campaign_name, category, campaign_id
 FROM dbo.MarketingAnalysis2
 ORDER BY campaign_name;
 
--- NULL check (FIXED LOGIC)
+-- NULL check 
 
 SELECT COUNT(*) AS count_null_values
 FROM dbo.MarketingAnalysis2
-WHERE c_date IS NULL
-   OR campaign_name IS NULL
-   OR category IS NULL
-   OR campaign_id IS NULL
-   OR impressions IS NULL
-   OR mark_spent IS NULL
-   OR clicks IS NULL
-   OR leads IS NULL 
-   OR orders IS NULL
-   OR revenue IS NULL;
-
+     WHERE c_date IS NULL
+        OR campaign_name IS NULL
+        OR category IS NULL
+        OR campaign_id IS NULL
+        OR impressions IS NULL
+        OR mark_spent IS NULL
+        OR clicks IS NULL
+        OR leads IS NULL 
+        OR orders IS NULL
+        OR revenue IS NULL;
 
 
  3. Date Transformation
