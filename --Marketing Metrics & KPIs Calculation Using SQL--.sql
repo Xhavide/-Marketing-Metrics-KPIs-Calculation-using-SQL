@@ -1,7 +1,7 @@
---new version polished
-// 
---Marketing Metrics & KPIs Calculation Using SQL--
 
+Marketing Metrics & KPIs Calculation Using SQL
+--------------------------------------------------------
+ 
  1. Data Preparation
 
 -- Create working table
