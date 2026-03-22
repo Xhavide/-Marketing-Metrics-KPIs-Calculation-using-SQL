@@ -93,9 +93,11 @@ The dataset contains campaign-level marketing data, including:
 
  ## 💻 Example SQL – Campaign KPI Calculation
  
-``SELECT campaign_name,
-      SUM(mark_spent) AS Total_Spend,
-       
+```sql
+SELECT campaign_name,
+
+       SUM(mark_spent) AS Total_Spend,
+
        ROUND(SUM(mark_spent) * 1.0 / NULLIF(SUM(orders),0),6) AS CAC,
        
        SUM(revenue) - SUM(mark_spent) AS Profit,
@@ -105,7 +107,8 @@ FROM dbo.MarketingAnalysis2
 
 GROUP BY campaign_name
 
-ORDER BY ROMI DESC;``
+ORDER BY ROMI DESC;
+                  
 
 
 -------
