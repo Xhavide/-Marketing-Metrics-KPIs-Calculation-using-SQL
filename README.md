@@ -224,6 +224,18 @@ marketing-kpi-analysis
 
 
 
+## 👩‍💻 Author
+
+**Xhavide Zymberi**
+
+Data Analytics | SQL | Tableau | Marketing Analytics
+
+LinkedIn:
+https://www.linkedin.com/in/xhavide-zymberi/
+
+GitHub:
+([https://github.com/Xhavide](https://github.com/Xhavide))
+
 
 
 
