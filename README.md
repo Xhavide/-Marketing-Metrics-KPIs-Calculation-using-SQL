@@ -1,51 +1,217 @@
-# Marketing Metrics & KPIs Calculation Using SQL #
+# 📊 Marketing Metrics & KPIs Analysis Using SQL
+---
+## 📊 Executive Summary
+
+
+This project evaluates marketing campaign performance through SQL-based KPI analysis, including CAC, ROMI, and conversion efficiency across the funnel.
+
+The analysis reveals significant performance variation across campaigns, with **“youtube_blogger”** and **“facebook_retargeting”** emerging as the most efficient and scalable, while campaigns like “facebook_lal” show negative returns and inefficient cost structures.
+
+The results highlight clear opportunities for **budget reallocation, campaign optimization, and data-driven marketing strategy improvement.**
+
+
+
+
+
+## 📌 Project Overview
+
+This project focuses on analyzing marketing campaign performance by calculating key KPIs using SQL. The objective is to evaluate campaign efficiency, profitability, and conversion performance to support data-driven decision-making.
+
+The analysis covers the full marketing funnel—from impressions to conversions—and includes cost efficiency metrics such as CAC, CPM, and ROMI. Additionally, campaign segmentation is applied to identify high-performing and underperforming campaigns for better budget allocation.
+
 ---
 
-## Project Overview ##
+## 🎯 Business Questions
 
-Tracking KPIs and performance metrics using SQL is of greater importance for any organization or company to measure their success. SQL queries are customizable. Based on their goals, you can create specific metrics for different teams, such as sales, marketing, or operations. In this project we are going to compute marketing metrics & KPIs such as customer acquisition cost(CAC), average order value(AOV), conversion rates, ROI etc. The goal of the project is to analyze performance across different marketing campaigns and the channel effectiveness as it provides digital marketers with actionable insights for effective budget  allocation and strategic resource investment.
+- Which campaigns generate the highest return on investment (ROMI)?
 
----
+- Which campaigns are the most cost-efficient in acquiring customers (CAC)?
+
+- How does performance vary across campaign categories?
+
+- Are customers more likely to convert on weekdays or weekends?
+
+- Which campaigns should be scaled, optimized, or discontinued?
+
+--------
+
+## 🗂 Dataset Description
+
+The dataset contains campaign-level marketing data, including:
+
+- Campaign Name
+
+- Category
+
+- Impressions, Clicks, Leads, Orders
+
+- Marketing Spend
+
+- Revenue
+
+- Conversion Date
+
+--------
+
+## 🔄 Analysis Workflow
+
+**1.** Data preparation and validation
+
+**2.** Date transformation for time-based analysis
+
+**3.** Funnel KPI calculations (CTR, conversion rates, AOV)
+
+**4.** Cost and efficiency metrics (CPM, CPC, CPL, CAC)
+
+**5.** Profitability analysis (Gross Profit, ROMI)
+
+**6.** Campaign segmentation for decision-making
+
+**7.** Behavioral analysis (weekday vs weekend performance)
+
+--------
+
+## 📊 Key Metrics
+
+- CTR (Click-Through Rate)
+
+- Visitor-to-Lead Conversion Rate
+
+- MQL to SQL Conversion Rate
+
+- Average Order Value (AOV)
+
+- Customer Acquisition Cost (CAC)
+
+- Cost per Click (CPC), Cost per Lead (CPL), CPM
+
+- Return on Marketing Investment (ROMI)
+
+- Profit & ROI
+
+  --------
+
+ ## 💻 Example SQL – Campaign KPI Calculation
+ 
+SELECT campaign_name,
+       SUM(mark_spent) AS Total_Spend,
+       ROUND(SUM(mark_spent) * 1.0 / NULLIF(SUM(orders),0),6) AS CAC,
+       SUM(revenue) - SUM(mark_spent) AS Profit,
+       ROUND((SUM(revenue) - SUM(mark_spent)) * 1.0 / NULLIF(SUM(mark_spent),0),6) * 100 AS ROMI
+FROM dbo.MarketingAnalysis2
+GROUP BY campaign_name
+ORDER BY ROMI DESC;
+
+-------
+
+## 🎯 Campaign Performance Segmentation
+
+Campaigns were classified based on efficiency and profitability:
+
+- High Performers → High ROMI & Low CAC → Scalable
+
+- Moderate Performers → Positive ROMI → Optimization opportunities
+
+- Underperformers → Negative ROMI → Require restructuring or discontinuation
+
+This segmentation enables clear budget allocation decisions.
 
 
+------
 
-## 🚀Project Features
+## 💡 Key Insights
+
+- The **“youtube_blogger”** campaign demonstrated the strongest overall performance, achieving the **highest ROMI (277.32%),** the **highest gross profit (11.25M),** and the **lowest CAC (2120.13),** making it the most efficient and scalable campaign.
+
+- The **“facebook_retargeting”** campaign also performed strongly, with a **ROMI of 101.49%** and a high **MQL-to-SQL conversion rate (21.34%),** indicating effective audience targeting and conversion efficiency.
+
+- In contrast, the **“facebook_lal”** campaign showed the weakest performance, with a **negative ROMI (-88.63%), high CAC (8986.18),** and significant negative profit, highlighting inefficient budget allocation.
+
+- The **“instagram_tier2”** campaign recorded the **lowest conversion rate (3.01%),** suggesting poor lead quality or ineffective targeting strategy.
+
+- **Influencer campaigns** outperformed other categories overall, achieving the **highest ROI (1.54)** and **Segment Profitability Margin (60%),** confirming their effectiveness in driving profitable growth.
+
+- Customer activity is **higher on weekdays,** resulting in stronger conversion rates and higher average revenue compared to weekends.
+
+  ---------
+
+  ## 📊 Business Recommendations
+
+- Reallocate budget toward high-performing campaigns with strong ROMI and low CAC
+
+- Optimize or pause underperforming campaigns with negative returns
+
+- Focus campaign execution on weekday performance windows
+
+- Continuously monitor both efficiency (CAC) and profitability (ROMI) for decision-making
+
+- Align campaign strategy with high-performing categories
+
+--------
+
+## 🛠 Tools Used
+
+- SQL Server
+
+- SQL (CTEs, Aggregations, KPI Calculations)
+
+  ----------
+
+## 🧠 Skills Demonstrated
+
+- Marketing analytics & KPI framework design
+
+- SQL data analysis and transformation
+
+- Funnel and conversion analysis
+
+- Campaign performance evaluation
+
+- Profitability and cost analysis
+
+- Data-driven business decision making
 
 
-- 📊Predefined SQL queries for Campaign goal KPIs and Campaign supported metrics  calculations(**Conversions, Customer acquisition cost (CAC), Average order value (AOV), ROI,   etc.)** 
-- ⌛Marketing funnel and spending calculations(**impressions, CPM, Conversions, Customer acquisition cost (CAC), Average order value (AOV), ROMI, etc.)**
-- 🔎Optimized queries for the analysis of campaign performance across different marketing channels ( **email, social media platforms, YouTube, websites, Google Ads, etc.)**
-- 👥Customer Behavior Analysis (**What is the MQL_to_SQL_conversion_rate on weekdays and weekends?**
-- 📈Trend analysis support (**What is the ratio of gross profit and average revenue between weekdays and weekends?**
-- 💰Customer Segment Profitability (CSP) calculations (**Helps to evaluate profitability of different customer groups and tailor strategies to improve it.)** 
-- ⚖️Multi-Touch Attribution (MTA) calculations (**Helps resource allocation across different marketing channels.)**
-
----
-
-
-## 💡📝Project Insights & Conclusions
-
-## 💡Key Insights 
-
-
-
-- The social media __"facebook_retargeting"__ campaign exhibits the highest **MQL-to-SQL conversion rate at 21.34%,** followed by the influencer __"YouTube_blogger" campaign at 19.27%.__
-
-- Conversely, the social media **"instagram_tier2"** campaign demonstrates the lowest **MQL-to-SQL conversion rate at 3.01%,** with the **"facebook_tier2"** campaign close behind at 8.16%.
-
-- In terms of ROI, __"influencer"__ campaigns are the top performers with an **ROI of 1.54294 and a Segment Profitability Margin (SPM) of 60%,** followed by **media** campaigns with an **ROI of 0.224062 and an SPM of 18.3%.**
-
-- Regarding total marketing expenditure and **ROMI**, the **"facebook_lal"** campaign shows the weakest performance, characterized by the highest **CAC of 8986.187891,** a negative **gross profit of -2341706.24,** and a negative **ROMI of -88.6359.** This is followed by the **"facebook_tier2"** campaign, with a **CAC of 6822.486875,** a negative **gross profit of -1230564.97,** and a negative **ROMI of -26.2164.**
-
-- The **"youtube_blogger"** campaign demonstrates the strongest performance, evidenced by the lowest **CAC of 2120.134018,** the highest **gross profit of 11253496.49,** and the highest **ROMI of 277.3207.** The **"facebook_retargeting"** campaign follows, with a **CAC of 2467.279815, a gross profit of 270452.78, and a ROMI of 101.4961.**
-
-- Customer activity appears to be **higher on weekdays compared to weekends,** resulting in greater average revenue generated during weekdays.
 ---------
- ## 📝Conclusion
+
+## ⚠️ Limitations
+
+- The dataset represents a single-month campaign period, limiting long-term trend and seasonality analysis
+
+- No customer-level data available, restricting cohort or retention analysis
+
+  -----------
+
+## 💼 Business Relevance
+
+This project demonstrates how SQL can be used to transform raw marketing data into actionable insights that support:
+
+- Budget allocation decisions
+
+- Campaign optimization strategies
+
+- Performance tracking and reporting
+
+- Marketing efficiency improvement
+
+--------
+
+## 📂 Repository Structure
+
+marketing-kpi-analysis
+│
+├── data
+├── sql
+│   └── marketing_kpi_queries.sql
+├── images
+├── README.md
 
 
 
-Even though it is only a one-month tracking of the marketing KPIs, this dataset serves as a sufficient resource for marketers and data analysts to uncover valuable insights regarding campaign performance, audience preferences, channel effectiveness, and ROI, demonstrating SQL's application in metric calculation and analysis. Businesses rely on a variety of KPIs to measure their success. **Knowing how to track these KPIs using SQL gives them a competitive edge in overcoming challenges and driving targeted growth.**
+
+
+---------
+
 
 
 
