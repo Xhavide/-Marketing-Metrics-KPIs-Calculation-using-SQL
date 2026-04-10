@@ -110,7 +110,7 @@ GROUP BY campaign_name
 ORDER BY ROMI DESC;
 ```
 
-
+Full SQL scripts available here 
 
 -------
 
