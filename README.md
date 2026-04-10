@@ -207,7 +207,7 @@ This project demonstrates how SQL can be used to transform raw marketing data in
 --------
 
 ## 📂 Repository Structure
-
+```
 marketing-kpi-analysis
 │
 ├── data
@@ -215,7 +215,7 @@ marketing-kpi-analysis
 │   └── marketing_kpi_queries.sql
 ├── images
 ├── README.md
-
+```
 
 
 
@@ -230,11 +230,9 @@ marketing-kpi-analysis
 
 Data Analytics | SQL | Tableau | Marketing Analytics
 
-LinkedIn:
-https://www.linkedin.com/in/xhavide-zymberi/
+LinkedIn [Profile](https://www.linkedin.com/in/xhavide-zymberi/)
 
-GitHub:
-([https://github.com/Xhavide](https://github.com/Xhavide))
+GitHub [Profile](https://github.com/Xhavidehttps://github.com/Xhavide)
 
 
 
