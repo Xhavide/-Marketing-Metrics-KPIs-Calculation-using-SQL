@@ -110,7 +110,7 @@ GROUP BY campaign_name
 ORDER BY ROMI DESC;
 ```
 
-Full SQL scripts available here 
+Full SQL scripts available [here](https://github.com/Xhavide/-Marketing-Metrics-KPIs-Calculation-using-SQL/blob/97867838d5818a6cf21f536d792660e71cf6d31a/--Marketing%20Metrics%20%26%20KPIs%20Calculation%20Using%20SQL--.sql) 
 
 -------
 
