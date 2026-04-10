@@ -232,7 +232,7 @@ Data Analytics | SQL | Tableau | Marketing Analytics
 
 LinkedIn [Profile](https://www.linkedin.com/in/xhavide-zymberi/)
 
-GitHub [Profile](https://github.com/Xhavidehttps://github.com/Xhavide)
+GitHub [Profile](https://github.com/Xhavide)
 
 
 
